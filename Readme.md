@@ -30,17 +30,15 @@ It is designed as part of a QA Automation portfolio to showcase **DB testing ski
 ---
 
 ## Repository structure (high-level)
-src/test/
-├── java/com/libraryApp/
-│ ├── pages/ # Page Object Model classes
-│ ├── steps/ # Cucumber step definitions
-│ ├── utility/ # DB utilities and config readers
-│ └── runner/ # Cucumber test runners
-├── resources/
-│ ├── features/ # Gherkin feature files
-│ ├── query/ # SQL query files
-│ └── pngs/ # Documentation images
-└── config.properties # Environment configuration
+- `src/test/java/com/libraryApp/pages/` — Page Object Model classes  
+- `src/test/java/com/libraryApp/steps/` — Step definitions (UI + JDBC + SQL validation)  
+- `src/test/java/com/libraryApp/utilities/` — DB utilities, driver, and config readers  
+- `src/test/java/com/libraryApp/runner/` — Cucumber test runners (`CukesRunner`)  
+- `src/test/resources/features/` — Gherkin feature files (business-readable scenarios)  
+- `src/test/resources/query/` — SQL query files for DB validation  
+- `src/test/resources/pngs/` — Documentation screenshots and diagrams  
+- `config.properties` — Environment configuration (browser, DB URL, credentials)  
+- `pom.xml` — Dependency and build configuration  
 
 ---
 
